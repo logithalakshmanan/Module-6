@@ -29,7 +29,45 @@ To create an **abstract class** named `Shape` with an **abstract method** `calcu
 ---
 
 ## 💻 Program
+from abc import ABC, abstractmethod
+
+class Polygon(ABC):
+    @abstractmethod
+    def sides(self):
+        pass
+
+class Triangle(Polygon):
+    def sides(self):
+        print("Triangle has 3 sides")
+
+class Quadrilateral(Polygon):
+    def sides(self):
+        print("I have 4 sides")
+
+class Pentagon(Polygon):
+    def sides(self):
+        print("Pentagon has 5 sides")
+
+class Hexagon(Polygon):
+    def sides(self):
+        print("Hexagon has 6 sides")
+
+Triangle().sides()
+Quadrilateral().sides()
+Pentagon().sides()
+Hexagon().sides()
 
 ## Output
+	Expected	Got	
+Triangle has 3 sides
+I have 4 sides
+Pentagon has 5 sides
+Hexagon has 6 sides
+Triangle has 3 sides
+I have 4 sides
+Pentagon has 5 sides
+Hexagon has 6 sides
 
 ## Result
+an **abstract class** named `Shape` with an **abstract method** `calculate_area`, and implement this method in two subclasses: `Rectangle` and `Circle` is created
+
