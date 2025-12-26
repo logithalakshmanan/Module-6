@@ -26,7 +26,30 @@ To create two specific classes — `Beans` and `Mango`. Then, create a **generic
 ---
 
 ## 💻 Program
+class Tiger:
+    def nature(self): print("I am a Tiger and I am dangerous.")
+    def color(self): print("Tigers are orange with black strips")
+
+
+class Elephant:
+    def nature(self): print("I am an Elephant and I am calm and harmless")
+    def color(self): print("Elephants are grayish black")
+
+
+for car in (Tiger(), Elephant()):
+    car.nature()
+    car.color()
 
 ## Output
+Expected	Got	
+I am a Tiger and I am dangerous.
+Tigers are orange with black strips
+I am an Elephant and I am calm and harmless
+Elephants are grayish black
+I am a Tiger and I am dangerous.
+Tigers are orange with black strips
+I am an Elephant and I am calm and harmless
+Elephants are grayish black
 
 ## Result
+Python OOP: Polymorphism with Classes is verified
